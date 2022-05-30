@@ -20,7 +20,11 @@ function block_dynamic_callback($attributes){
    wp_enqueue_script('load-dynamic', $route . '/build/frontend.js', array('wp-element', 'wp-editor', 'wp-blocks'));
    wp_enqueue_style('load-dynamic-styles', $route . '/build/frontend.css');
  
-   return '<p class=text-paragraph-frontend>Today the sky</p>';
+   // return '<p class=text-paragraph-frontend>Today the sky</p>';
+   
+   ob_start(); ?>
+   <h3 class=text-paragraph-frontend>Today the sky is Green</h3>
+   <?php return ob_get_clean();
 }    
  
 add_action('init', 'adminAssets');
