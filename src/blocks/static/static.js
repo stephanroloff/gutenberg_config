@@ -5,6 +5,10 @@ registerBlockType("ourplugin/static", {
   title: "Static",
   icon: "megaphone",
   category: "common",
+  supports: {
+    align: true,
+    alignWide: true,
+  },
   edit: function () {
     return <h3 className="text-static">This is a STATIC BLOCK from Editor!</h3>;
   },

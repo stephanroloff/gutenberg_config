@@ -6,6 +6,9 @@ registerBlockType("ourplugin/dynamic", {
   title: "Dynamic Block",
   icon: "smiley",
   category: "common",
+  attributes: {
+    message: "string",
+  },
   edit: function () {
     return (
       <div>
