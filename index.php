@@ -29,3 +29,4 @@ add_action('enqueue_block_assets', 'enqueue_all');
 
 //------Including Dynamic Blocks--------
 include 'src/blocks/dynamic/dynamic.php';
+include 'src/blocks/child-page/child-page.php';
