@@ -28,5 +28,7 @@ add_action('enqueue_block_assets', 'enqueue_all');
 
 
 //------Including Dynamic Blocks--------
+include 'src/blocks/00-muster-block/muster-block.php';
 include 'src/blocks/dynamic/dynamic.php';
 include 'src/blocks/child-page/child-page.php';
+include 'src/blocks/child-links/child-links.php';

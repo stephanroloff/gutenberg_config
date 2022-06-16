@@ -2,15 +2,15 @@ import "../../index.scss";
 import { registerBlockType } from "@wordpress/blocks";
 import ServerSideRender from "@wordpress/server-side-render";
 
-registerBlockType("ourplugin/child-page-link", {
-  title: "Child Page Link",
-  icon: "admin-links",
+registerBlockType("ourplugin/muster-block", {
+  title: "Muster Block",
+  icon: "block-default",
   category: "common",
   edit: function () {
     return (
-      <div className="child-page-link-block">
+      <div className="muster-block">
         <ServerSideRender
-          block="ourplugin/child-page-link"
+          block="ourplugin/muster-block"
           attributes={{
             showPostCounts: true,
             displayAsDropdown: false,
